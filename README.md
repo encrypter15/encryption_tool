@@ -1,14 +1,23 @@
-# encryption tool
-Cybersecurity tool for [add description].
+# Encryption Tool
+
+## Overview
+The Encryption Tool is a Python script that encrypts files using the `cryptography` library’s Fernet symmetric encryption. It generates a key, encrypts the specified file, and saves both the encrypted file and the key.
+
+## Author
+Rick Hayes
+
+## License
+MIT
+
+## Version
+2.73
 
 ## Requirements
 - Python 3.x
-- [add specific dependencies]
+- `cryptography` library (`pip install cryptography`)
 
 ## Usage
-```bash
-python encryption_tool.py --help
-```
+Run the script with the following arguments:
 
-## Configuration
-Edit `config.ini` for custom settings.
+```bash
+python3 encryption_tool.py --file <INPUT_FILE> --output <OUTPUT_FILE> [--config <CONFIG_FILE>]
